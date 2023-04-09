@@ -1,0 +1,26 @@
+{% extends 'Student/base.html' %}
+{% load static %}
+
+{% block title %}
+Welcome To
+{% endblock %}
+{% block content %}
+
+
+
+
+ <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+        <h2 class="mb-12 text-2xl text-center">Engineering Branches Applicable For Students</h2>
+        <div class="grid grid-cols-3 gap-3">
+            {% for d in domains %}
+                     <div class="p-6 bg-white rounded-b-xl">
+                       <h2>{{d.domain_name}}</h2>
+                      <!-- <h2>{{d.students.count}}</h2>-->
+                       
+                      </div>
+            {% endfor %}
+            </div>
+            </div>
+            
+    
+{% endblock %}

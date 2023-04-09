@@ -1,0 +1,62 @@
+{% extends 'Student/base.html' %}
+{% load static %}
+{% block title %}
+Add Student
+{% endblock %}
+{% block content %}
+<div class="flex flex-col min-h-screen bg-gray-100">
+  <div class="w-full max-w-md flex-1 mx-auto">
+    <h1 class="text-3xl font-bold text-center text-teal-700 mt-10 mb-12">Add a Student</h1>
+    <form method="post" action="." enctype="multipart/form-data" class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+      {% csrf_token %}
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-2 py-2" for="stu_num">Student Number</label>
+        {{ form.stu_num }}
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-4 py-2" for="first_name">First Name</label>
+        {{ form.first_name }}
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-4 py-2" for="last_name">Last Name</label>
+        {{ form.last_name }}
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-4 py-2" for="email">Email</label>
+        {{ form.email }}
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-4 py-2" for="image">Image</label>
+        {{ form.image }}
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-4 py-2" for="gpa">GPA</label>
+        {{ form.gpa }}
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-bold mb-2 border border-teal-100 rounded-lg px-4 py-2" for="domain">Domain</label>
+        {{ form.domain }}
+      </div>
+      <div class="flex items-center justify-center">
+        <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-3 px-20 rounded-full" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+ 
+</div>
+
+<style>
+  /* Set the min-height of the flex container to the height of the viewport */
+  .min-h-screen {
+    min-height: 100vh;
+  }
+
+  /* Set the form container to flex-1 to take up all available space */
+  .flex-1 {
+    flex: 1;
+  }
+</style>
+
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'Student/base.html' %}
+{% block title %}
+Signout |
+{% endblock %}
+{% block content %}
+
+
+<div class="text-center text-2xl font-bold mb-20">You have been signed out.</div>
+
+<div class="flex justify-center items-center flex-col mb-20">
+  <p class="mb-4">Don't have an account yet?</p>
+  <a href="{% url 'Student:signup' %}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Sign up</a>
+</div>
+
+<div class="flex justify-center items-center flex-col mb-20">
+  <p class="mb-4">Already have an account?</p>
+  <a href="{% url 'signin' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign in</a>
+</div>
+{% endblock %}

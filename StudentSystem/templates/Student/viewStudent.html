@@ -1,0 +1,42 @@
+{% extends 'Student/base.html' %}
+{% block title %}
+View Student |
+{% endblock %}
+{% block content %}
+  {% if student_list %}
+  <table class="table-auto mx-auto">
+    <thead>
+      <tr>
+        <th class="px-4 py-2">Student Number</th>
+        <th class="px-4 py-2">First Name</th>
+        <th class="px-4 py-2">Last Name</th>
+        <th class="px-4 py-2">Email</th>
+        <th class="px-4 py-2">Photo</th>
+        <th class="px-4 py-2">GPA</th>
+        <th class="px-4 py-2">Domain</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for student in student_list %}   
+      <tr>
+        <td class="border px-4 py-2"><a href="{% url 'Student:delete' student.id %}">{{ student.stu_num }}</a></td>
+        <td class="border px-4 py-2"><a href="{% url 'Student:delete' student.id %}">{{ student.first_name }}</a></td>
+        <td class="border px-4 py-2"><a href="{% url 'Student:delete' student.id %}">{{ student.last_name }}</a></td>
+        <td class="border px-4 py-2"><a href="{% url 'Student:delete' student.id %}">{{ student.email }}</a></td>
+        <td class="border px-4 py-2">
+          {% if student.image %}
+         <a href="{% url 'Student:delete' student.id %}"><img src="{{ student.image.url }}" class="h-10 w-10 rounded-full"></a>
+          {% else %}
+          No Image
+          {% endif %}
+        </td>
+        <td class="border px-4 py-2"><a href="{% url 'Student:delete' student.id %}">{{ student.gpa }}</a></td>
+        <td class="border px-4 py-2"><a href="{% url 'Student:delete' student.id %}">{{ student.domain }}</a></td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+  {% else %}
+  <p>No Record Found</p>
+  {% endif %}
+{% endblock %}
