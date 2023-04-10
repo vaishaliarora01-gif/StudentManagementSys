@@ -16,7 +16,7 @@ def index_view(request):
     Function to render the index page of the application
     """
     domains = Domain.objects.all()
-    return render(request, 'student/index.html', {'domains': domains})
+    return render(request, 'Student/index.html', {'domains': domains})
 
 
 def student_home(request):
@@ -24,7 +24,7 @@ def student_home(request):
     Function to render the home page of the application for students
     """
     domains = Domain.objects.all()
-    return render(request, 'student/home.html', {'domains': domains})
+    return render(request, 'Student/home.html', {'domains': domains})
 
 
 def student_show(request, pid):
@@ -32,31 +32,31 @@ def student_show(request, pid):
     Function to render the page for a specific domain
     """
     domains = get_object_or_404(Domain, pk=pid)
-    return render(request, 'student/show.html', {'domains': domains})
+    return render(request, 'Student/show.html', {'domains': domains})
 
 
 def student_privacy(request):
     """
     Function to render the privacy page of the application
     """
-    return render(request, 'student/privacy.html')
+    return render(request, 'Student/privacy.html')
 
 
 def student_about(request):
     """
     Function to render the about page of the application
     """
-    return render(request, 'student/about.html')
+    return render(request, 'Student/about.html')
 
 
 def student_contact(request):
     """
     Function to render the contact page of the application
     """
-    return render(request, 'student/contact.html')
+    return render(request, 'Student/contact.html')
 
 
-def signup_view(request):
+def signupview(request):
     """
     Function to render the signup page of the application
     """
@@ -69,7 +69,7 @@ def signup_view(request):
             return redirect('signin')
     elif request.method == "GET":
         form = SignupForm()
-    return render(request, 'student/signup.html', {'form': form})
+    return render(request, 'Student/signup.html', {'form': form})
 
 
 def student_view(request):
@@ -77,7 +77,7 @@ def student_view(request):
     Function to render the list of students in the application
     """
     student_list = Student.objects.all()
-    return render(request, 'student/viewStudent.html', {'student_list': student_list})
+    return render(request, 'Student/viewStudent.html', {'student_list': student_list})
 
 
 def student_add(request):
@@ -94,25 +94,25 @@ def student_add(request):
             return redirect('/list')
     elif request.method == "GET":
         form = StudentAddForm()
-    return render(request, 'student/addStudent.html', {'form': form})
+    return render(request, 'Student/addStudent.html', {'form': form})
 
 
-def student_delete(request, student_id):
+def student_delete(request,id):
     """
     Function to delete a student from the application
     """
-    student = get_object_or_404(Student, pk=student_id)
+    student = get_object_or_404(Student, pk=id)
     if request.method == 'POST':
         student.delete()
-        return redirect('student:list')
-    return render(request, 'student/deleteStudent.html', {'student': student})
+        return redirect('Student:list')
+    return render(request, 'Student/deleteStudent.html', {'student': student})
 
 
-def student_update(request, student_id):
+def student_update(request, id):
     """
     Function to update a student's record in the application
     """
-    student = get_object_or_404(Student, pk=student_id)
+    student = get_object_or_404(Student, pk=id)
     if request.method == "POST":
         form = StudentAddForm(request.POST, request.FILES, instance=student)
         if form.is_valid():

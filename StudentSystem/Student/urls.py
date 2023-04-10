@@ -5,7 +5,7 @@ URL patterns for the Student app.
 from django.urls import path
 from Student import views
 
-APP_NAME = 'Student'
+app_name = 'Student'
 
 urlpatterns = [
     path('', views.index_view, name='index'),
