@@ -1,0 +1,29 @@
+Run1
+
+************* Module Student.views
+views.py:122:0: W0311: Bad indentation. Found 11 spaces, expected 12 (bad-indentation)
+views.py:127:0: C0303: Trailing whitespace (trailing-whitespace)
+views.py:128:0: C0303: Trailing whitespace (trailing-whitespace)
+views.py:15:14: E1101: Class 'Domain' has no 'objects' member (no-member)
+views.py:23:14: E1101: Class 'Domain' has no 'objects' member (no-member)
+views.py:76:19: E1101: Class 'Student' has no 'objects' member (no-member)
+views.py:97:28: C0103: Argument name "id" doesn't conform to snake_case naming style (invalid-name)
+views.py:97:28: W0622: Redefining built-in 'id' (redefined-builtin)
+views.py:108:28: C0103: Argument name "id" doesn't conform to snake_case naming style (invalid-name)
+views.py:108:28: W0622: Redefining built-in 'id' (redefined-builtin)
+views.py:7:0: C0411: third party import "from django.contrib import messages" should be placed before "from Student.forms import SignupForm, StudentAddForm" (wrong-import-order)
+views.py:7:0: C0412: Imports from package django are not grouped (ungrouped-imports)
+views.py:8:0: C0412: Imports from package Student are not grouped (ungrouped-imports)
+
+------------------------------------------------------------------
+Your code has been rated at 6.15/10 (previous run: 6.15/10, +0.00)
+
+Run 1
+************* Module Student.views
+views.py:18:14: E1101: Class 'Domain' has no 'objects' member (no-member)
+views.py:26:14: E1101: Class 'Domain' has no 'objects' member (no-member)
+views.py:79:19: E1101: Class 'Student' has no 'objects' member (no-member)
+
+------------------------------------------------------------------
+Your code has been rated at 7.69/10 (previous run: 7.69/10, +0.00)
+

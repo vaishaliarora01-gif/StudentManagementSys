@@ -1,0 +1,29 @@
+************* Module Student.forms
+forms.py:11:0: C0303: Trailing whitespace (trailing-whitespace)
+forms.py:15:0: C0303: Trailing whitespace (trailing-whitespace)
+forms.py:16:0: C0303: Trailing whitespace (trailing-whitespace)
+forms.py:26:0: C0301: Line too long (103/100) (line-too-long)
+forms.py:31:0: C0303: Trailing whitespace (trailing-whitespace)
+forms.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+forms.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+forms.py:12:4: C0115: Missing class docstring (missing-class-docstring)
+forms.py:12:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+forms.py:17:0: C0115: Missing class docstring (missing-class-docstring)
+forms.py:18:4: C0115: Missing class docstring (missing-class-docstring)
+forms.py:18:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+-----------------------------------
+Your code has been rated at 2.50/10
+
+
+****************************************************************************
+SECOND RUN
+
+************* Module Student.forms
+forms.py:48:0: C0303: Trailing whitespace (trailing-whitespace)
+forms.py:34:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+forms.py:59:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 8.12/10 (previous run: 8.12/10, +0.00)
+

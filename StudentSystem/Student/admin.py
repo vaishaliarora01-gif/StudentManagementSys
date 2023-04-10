@@ -1,8 +1,12 @@
-from django.contrib import admin
+"""
+This module defines the admin views for the Student app.
 
-# Register your models here.
+It includes models that are displayed in the admin site.
+"""
+from django.contrib import admin
 from Student.models import Student,Domain
 
-admin.site.register(Domain)
+# Register your models here.
 
+admin.site.register(Domain)
 admin.site.register(Student)

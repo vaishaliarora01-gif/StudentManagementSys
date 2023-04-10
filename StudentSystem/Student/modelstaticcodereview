@@ -1,0 +1,26 @@
+************* Module Student.models
+models.py:12:0: C0303: Trailing whitespace (trailing-whitespace)
+models.py:22:0: C0301: Line too long (106/100) (line-too-long)
+models.py:25:0: C0301: Line too long (138/100) (line-too-long)
+models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+models.py:5:0: C0115: Missing class docstring (missing-class-docstring)
+models.py:9:4: C0115: Missing class docstring (missing-class-docstring)
+models.py:9:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+models.py:13:4: E0307: __str__ does not return str (invalid-str-returned)
+models.py:17:0: C0115: Missing class docstring (missing-class-docstring)
+models.py:26:4: C0115: Missing class docstring (missing-class-docstring)
+models.py:26:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 2.86/10 (previous run: 2.86/10, +0.00)
+
+After second run
+
+************* Module Student.models
+models.py:14:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+models.py:25:4: E0307: __str__ does not return str (invalid-str-returned)
+models.py:48:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 6.67/10 (previous run: 6.67/10, +0.00)
+

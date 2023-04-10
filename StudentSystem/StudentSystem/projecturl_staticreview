@@ -1,0 +1,20 @@
+First Run
+*********************************************
+
+************* Module StudentSystem.urls
+urls.py:26:0: C0301: Line too long (104/100) (line-too-long)
+urls.py:28:0: C0303: Trailing whitespace (trailing-whitespace)
+
+------------------------------------------------------------------
+Your code has been rated at 6.67/10 (previous run: 6.67/10, +0.00)
+
+
+Second Run
+**********************************************
+
+************* Module StudentSystem.urls
+urls.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
+
+------------------------------------------------------------------
+Your code has been rated at 8.33/10 (previous run: 8.33/10, +0.00)
+
